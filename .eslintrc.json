@@ -1,0 +1,12 @@
+{
+    "extends": "@rahagia/eslint-config",
+    "rules": {
+        "class-methods-use-this": "off",
+        "function-call-argument-newline": "off",
+        "no-eq-null": "off",
+        "no-negated-condition": "off",
+        "prefer-named-capture-group": "off",
+        "semi": "off",
+        "sort-keys": "off"
+    }
+}
