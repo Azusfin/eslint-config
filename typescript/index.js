@@ -12,7 +12,7 @@ module.exports = {
             }
         }],
         "@typescript-eslint/member-ordering": "off",
-        "@typescript-eslint/naming-convention": ["warn", [{
+        "@typescript-eslint/naming-convention": ["warn", {
             selector: "default",
             format: ["camelCase"],
             leadingUnderscore: "forbid",
@@ -27,7 +27,7 @@ module.exports = {
             selector: "property",
             format: ["camelCase", "UPPER_CASE"],
             leadingUnderscore: "allowSingleOrDouble"
-        }]],
+        }],
         "@typescript-eslint/member-delimiter-style": ["warn", {
             multiline: {
                 delimiter: "none",
