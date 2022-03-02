@@ -27,6 +27,11 @@ module.exports = {
             selector: "property",
             format: ["camelCase", "UPPER_CASE"],
             leadingUnderscore: "allowSingleOrDouble"
+        }, {
+            selector: "parameter",
+            format: ["camelCase"],
+            modifiers: ["unused"],
+            leadingUnderscore: "allow"
         }],
         "@typescript-eslint/member-delimiter-style": ["warn", {
             multiline: {
