@@ -44,6 +44,7 @@ module.exports = {
             }
         }],
         "@typescript-eslint/semi": "off",
+        "@typescript-eslint/sort-type-union-intersection-members": "off",
         ...require(resolve(__dirname, "..", "index.js")).rules
     }
 }
