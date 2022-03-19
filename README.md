@@ -41,6 +41,6 @@ or `"@azusfin/eslint-config/typescript/node"` for Node environment
 Requires [ESLint](https://npmjs.com/package/eslint) version 8.7.0 or above
 
 TypeScript config requires:
-* [@typescript-eslint/parser](https://npmjs.com/package/@typescript-eslint/parser) version 5.10.0 or above
-* [@typescript-eslint/eslint-plugin](https://npmjs.com/package/@typescript-eslint/eslint-plugin) version 5.10.0 or above
-* [typescript](https://npmjs.com/package/typescript) version 3.3.1 to 4.6.0
+* [@typescript-eslint/parser](https://npmjs.com/package/@typescript-eslint/parser) version 5.14.0 or above
+* [@typescript-eslint/eslint-plugin](https://npmjs.com/package/@typescript-eslint/eslint-plugin) version 5.14.0 or above
+* [typescript](https://npmjs.com/package/typescript) version 3.3.1 to 4.7.0

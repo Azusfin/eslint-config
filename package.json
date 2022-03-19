@@ -1,6 +1,6 @@
 {
   "name": "@azusfin/eslint-config",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "An ESLint shareable config that I used in my projects",
   "repository": {
     "type": "git",
@@ -24,17 +24,17 @@
   },
   "devDependencies": {
     "@types/node": "^17",
-    "@typescript-eslint/eslint-plugin": ">=5.10.0",
-    "@typescript-eslint/parser": ">=5.10.0",
+    "@typescript-eslint/eslint-plugin": ">=5.14.0",
+    "@typescript-eslint/parser": ">=5.14.0",
     "eslint": ">=8.7.0",
-    "typescript": ">=3.3.1 <4.6.0"
+    "typescript": ">=3.3.1 <4.7.0"
   },
   "peerDependencies": {
     "@types/node": "^17",
-    "@typescript-eslint/eslint-plugin": ">=5.10.0",
-    "@typescript-eslint/parser": ">=5.10.0",
+    "@typescript-eslint/eslint-plugin": ">=5.14.0",
+    "@typescript-eslint/parser": ">=5.14.0",
     "eslint": ">=8.7.0",
-    "typescript": ">=3.3.1 <4.6.0"
+    "typescript": ">=3.3.1 <4.7.0"
   },
   "peerDependenciesMeta": {
     "@typescript-eslint/eslint-plugin": {
