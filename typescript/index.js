@@ -32,6 +32,9 @@ module.exports = {
             format: ["camelCase"],
             modifiers: ["unused"],
             leadingUnderscore: "allow"
+        }, {
+            selector: "enumMember",
+            format: ["PascalCase"]
         }],
         "@typescript-eslint/member-delimiter-style": ["warn", {
             multiline: {
