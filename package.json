@@ -23,17 +23,15 @@
     "@rahagia/eslint-config": "^8"
   },
   "devDependencies": {
-    "@types/node": "^17",
-    "@typescript-eslint/eslint-plugin": ">=5.14.0",
-    "@typescript-eslint/parser": ">=5.14.0",
-    "eslint": ">=8.7.0",
+    "@typescript-eslint/eslint-plugin": ">=5.18.0",
+    "@typescript-eslint/parser": ">=5.18.0",
+    "eslint": ">=8.13.0",
     "typescript": ">=3.3.1 <4.7.0"
   },
   "peerDependencies": {
-    "@types/node": "^17",
-    "@typescript-eslint/eslint-plugin": ">=5.14.0",
-    "@typescript-eslint/parser": ">=5.14.0",
-    "eslint": ">=8.7.0",
+    "@typescript-eslint/eslint-plugin": ">=5.18.0",
+    "@typescript-eslint/parser": ">=5.18.0",
+    "eslint": ">=8.13.0",
     "typescript": ">=3.3.1 <4.7.0"
   },
   "peerDependenciesMeta": {
