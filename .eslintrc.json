@@ -1,5 +1,5 @@
 {
-    "extends": "@rahagia/eslint-config",
+    "extends": "@clytage-pkg/eslint-config",
     "rules": {
         "class-methods-use-this": "off",
         "function-call-argument-newline": "off",
