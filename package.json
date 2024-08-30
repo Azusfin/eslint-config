@@ -1,6 +1,6 @@
 {
   "name": "@azusfin/eslint-config",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "An ESLint shareable config that I use in my projects",
   "repository": {
     "type": "git",
@@ -26,5 +26,5 @@
   "dependencies": {
     "@stegripe/eslint-config": "^1.0.1"
   },
-  "packageManager": "pnpm@9.8.0+sha512.8e4c3550fb500e808dbc30bb0ce4dd1eb614e30b1c55245f211591ec2cdf9c611cabd34e1364b42f564bd54b3945ed0f49d61d1bbf2ec9bd74b866fcdc723276"
+  "packageManager": "npm@10.8.3+sha512.d08425c8062f56d43bb8e84315864218af2492eb769e1f1ca40740f44e85bd148969382d651660363942e5909cb7ffcbef7ca0ae963ddc2c57a51243b4da8f56"
 }

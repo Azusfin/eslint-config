@@ -1,8 +1,24 @@
 import * as Stegripe from "@stegripe/eslint-config"
 
-export const { browser, common, edge, modules, node, prettier, extend } = Stegripe
+export const { browser, common, edge, modules, node, prettier, ignores, extend } = Stegripe
 
 export const stylistic = Stegripe.extend(Stegripe.stylistic, [
+    {
+        rule: "stylistic/member-delimiter-style",
+        option: [
+            "warn",
+            {
+                multiline: {
+                    delimiter: "none",
+                    requireLast: false
+                },
+                singleline: {
+                    delimiter: "semi",
+                    requireLast: false
+                }
+            }
+        ]
+    },
     {
         rule: "stylistic/semi",
         option: "off"
@@ -11,8 +27,13 @@ export const stylistic = Stegripe.extend(Stegripe.stylistic, [
 
 export const typescript = Stegripe.extend(Stegripe.typescript, [
     {
+        rule: "typescript/consistent-type-definitions",
+        option: ["error", "interface"]
+    },
+    {
         rule: "typescript/explicit-member-accessibility",
-        option: ["error",
+        option: [
+            "error",
             {
                 accessibility: "explicit",
                 overrides: {
@@ -27,7 +48,8 @@ export const typescript = Stegripe.extend(Stegripe.typescript, [
     },
     {
         rule: "typescript/naming-convention",
-        option: ["warn",
+        option: [
+            "warn",
             {
                 selector: "default",
                 format: ["camelCase"],
@@ -60,22 +82,7 @@ export const typescript = Stegripe.extend(Stegripe.typescript, [
         ]
     },
     {
-        rule: "typescript/member-delimiter-style",
-        option: ["warn",
-            {
-                multiline: {
-                    delimiter: "none",
-                    requireLast: false
-                },
-                singleline: {
-                    delimiter: "semi",
-                    requireLast: false
-                }
-            }
-        ]
-    },
-    {
-        rule: "typescript/sort-type-union-intersection-members",
+        rule: "typescript/sort-type-constituents",
         option: "off"
     }
 ], true);
