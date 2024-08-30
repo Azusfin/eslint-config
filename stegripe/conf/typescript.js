@@ -187,7 +187,6 @@ export default tseslint.config({
             }
         ],
         "no-throw-literal": "off",
-        "typescript/no-throw-literal": "error",
         "typescript/no-unnecessary-boolean-literal-compare": "warn",
         "typescript/no-unnecessary-condition": [
             "warn",
@@ -229,6 +228,7 @@ export default tseslint.config({
         "typescript/no-useless-empty-export": "warn",
         "typescript/no-var-requires": "error",
         "typescript/non-nullable-type-assertion-style": "warn",
+        "typescript/only-throw-error": "error",
         "typescript/prefer-as-const": "warn",
         "typescript/prefer-enum-initializers": "warn",
         "typescript/prefer-find": "error",
