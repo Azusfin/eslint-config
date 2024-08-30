@@ -1,6 +1,6 @@
-import * as Stegripe from "./stegripe"
+import * as Stegripe from "./stegripe/index.js"
 
-export { browser, common, edge, modules, node, prettier, ignores, extend } from "./stegripe"
+export { browser, common, edge, modules, node, prettier, ignores, extend } from "./stegripe/index.js"
 
 export const stylistic = Stegripe.extend(Stegripe.stylistic, [
     {
