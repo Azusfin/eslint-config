@@ -1,6 +1,6 @@
 {
   "name": "@azusfin/eslint-config",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "An ESLint shareable config that I use in my projects",
   "repository": {
     "type": "git",
@@ -18,18 +18,26 @@
     "lint:fix": "eslint . --fix"
   },
   "exports": {
-    ".": "./index.js"
+    ".": "./index.js",
+    "./stegripe": "./stegripe/index.js"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "stegripe"
   ],
-  "dependencies": {
-    "@stegripe/eslint-config": "^1.0.1"
-  },
-  "overrides": {
-    "@stegripe/eslint-config": {
-      "typescript-eslint": "^8.3.0"
-    }
+  "peerDependencies": {
+    "@stylistic/eslint-plugin": "^2.7.1",
+    "eslint": "^9.9.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-import-x": "^4.1.0",
+    "eslint-plugin-jsdoc": "^50.2.2",
+    "eslint-plugin-n": "^17.10.2",
+    "eslint-plugin-promise": "^7.1.0",
+    "eslint-plugin-tsdoc": "^0.3.0",
+    "eslint-plugin-unicorn": "^55.0.0",
+    "globals": "^15.9.0",
+    "typescript-eslint": "^8.3.0"
   },
   "packageManager": "npm@10.8.3+sha512.d08425c8062f56d43bb8e84315864218af2492eb769e1f1ca40740f44e85bd148969382d651660363942e5909cb7ffcbef7ca0ae963ddc2c57a51243b4da8f56"
 }

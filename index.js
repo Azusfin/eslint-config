@@ -1,6 +1,6 @@
-import * as Stegripe from "@stegripe/eslint-config"
+import * as Stegripe from "./stegripe"
 
-export const { browser, common, edge, modules, node, prettier, ignores, extend } = Stegripe
+export { browser, common, edge, modules, node, prettier, ignores, extend } from "./stegripe"
 
 export const stylistic = Stegripe.extend(Stegripe.stylistic, [
     {
@@ -85,4 +85,4 @@ export const typescript = Stegripe.extend(Stegripe.typescript, [
         rule: "typescript/sort-type-constituents",
         option: "off"
     }
-], true);
+], true)
