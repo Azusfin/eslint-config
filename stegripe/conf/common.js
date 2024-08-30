@@ -1,9 +1,9 @@
-import importPlugin from "eslint-plugin-import-x";
-import jsdoc from "eslint-plugin-jsdoc";
-import promise from "eslint-plugin-promise";
-import unicorn from "eslint-plugin-unicorn";
-import globals from "globals";
-import ignores from "./ignores.js";
+import importPlugin from "eslint-plugin-import-x"
+import jsdoc from "eslint-plugin-jsdoc"
+import promise from "eslint-plugin-promise"
+import unicorn from "eslint-plugin-unicorn"
+import globals from "globals"
+import ignores from "./ignores.js"
 
 /** @type {import("eslint").Linter.Config[]} */
 export default [
@@ -387,7 +387,7 @@ export default [
             "unicorn/prefer-code-point": "error",
             "unicorn/prefer-date-now": "error",
             "unicorn/prefer-default-parameters": "warn",
-            "unicorn/prefer-export-from": "error",
+            "unicorn/prefer-export-from": "off",
             "unicorn/prefer-includes": "error",
             "unicorn/prefer-keyboard-event-key": "error",
             "unicorn/prefer-logical-operator-over-ternary": "error",
@@ -449,4 +449,4 @@ export default [
             }
         }
     }
-];
+]

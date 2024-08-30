@@ -1,5 +1,5 @@
-import globals from "globals";
-import ignores from "./ignores.js";
+import globals from "globals"
+import ignores from "./ignores.js"
 
 /** @type {import("eslint").Linter.Config[]} */
 export default [
@@ -22,4 +22,4 @@ export default [
             "n/prefer-global/url-search-params": ["error", "always"]
         }
     }
-];
+]

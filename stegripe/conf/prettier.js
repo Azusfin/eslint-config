@@ -1,5 +1,5 @@
-import prettier from "eslint-config-prettier";
-import ignores from "./ignores.js";
+import prettier from "eslint-config-prettier"
+import ignores from "./ignores.js"
 
 /** @type {import("eslint").Linter.Config[]} */
 export default [
@@ -10,4 +10,4 @@ export default [
             ...prettier.rules
         }
     }
-];
+]

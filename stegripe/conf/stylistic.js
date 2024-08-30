@@ -1,5 +1,5 @@
-import stylistic from "@stylistic/eslint-plugin";
-import ignores from "./ignores.js";
+import stylistic from "@stylistic/eslint-plugin"
+import ignores from "./ignores.js"
 
 /** @type {import("eslint").Linter.Config[]} */
 export default [
@@ -153,4 +153,4 @@ export default [
             "stylistic/jsx-wrap-multilines": "warn"
         }
     }
-];
+]

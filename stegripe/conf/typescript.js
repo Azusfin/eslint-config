@@ -1,7 +1,7 @@
-import importPlugin from "eslint-plugin-import-x";
-import tsdoc from "eslint-plugin-tsdoc";
-import tseslint from "typescript-eslint";
-import common from "./common.js";
+import importPlugin from "eslint-plugin-import-x"
+import tsdoc from "eslint-plugin-tsdoc"
+import tseslint from "typescript-eslint"
+import common from "./common.js"
 
 export default tseslint.config({
     name: "stegripe/typescript",
@@ -309,4 +309,4 @@ export default tseslint.config({
             }
         }
     }
-});
+})

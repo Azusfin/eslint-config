@@ -1,18 +1,28 @@
-export { default as common } from "./conf/common.js";
-export { default as typescript } from "./conf/typescript.js";
-export { default as modules } from "./conf/modules.js";
-export { default as node } from "./conf/node.js";
-export { default as prettier } from "./conf/prettier.js";
-export { default as stylistic } from "./conf/stylistic.js";
-export { default as browser } from "./conf/browser.js";
-export { default as edge } from "./conf/edge.js";
-export { default as ignores } from "./conf/ignores.js";
+import confBrowser from "./conf/browser.js"
+import confCommon from "./conf/common.js"
+import confEdge from "./conf/edge.js"
+import confIgnores from "./conf/ignores.js"
+import confModules from "./conf/modules.js"
+import confNode from "./conf/node.js"
+import confPrettier from "./conf/prettier.js"
+import confStylistic from "./conf/stylistic.js"
+import confTypescript from "./conf/typescript.js"
+
+export const browser = confBrowser
+export const common = confCommon
+export const edge = confEdge
+export const ignores = confIgnores
+export const modules = confModules
+export const node = confNode
+export const prettier = confPrettier
+export const stylistic = confStylistic
+export const typescript = confTypescript
 
 /**
- * @param {import("eslint").Linter.FlatConfig[]} config - eslint config
+ * @param {import("eslint").Linter.Config[]} config - eslint config
  * @param {{ rule: string, option: ["off" | "warn" | "error", object] }[]} rulesAndOptions - rules and options to extend
  * @param {boolean} replace - replace existing options
- * @returns {import("eslint").Linter.FlatConfig[]}
+ * @returns {import("eslint").Linter.Config[]}
  * @example extend(config, [{ rule: "no-console", option: ["warn", { allow: ["warn", "error"] }] }])
  */
 export function extend(config, rulesAndOptions, replace = false) {
@@ -20,15 +30,15 @@ export function extend(config, rulesAndOptions, replace = false) {
         if (c.rules) {
             for (const { rule, option } of rulesAndOptions) {
                 if (replace) {
-                    c.rules[rule] = option;
+                    c.rules[rule] = option
                 } else {
-                    const oldOption = c.rules[rule];
+                    const oldOption = c.rules[rule]
                     c.rules[rule] = [
                         option[0], Array.isArray(oldOption) ? { ...oldOption[1], ...option[1] } : option[1]
-                    ];
+                    ]
                 }
             }
         }
-        return c;
-    });
+        return c
+    })
 }
