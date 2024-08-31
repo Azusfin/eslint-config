@@ -1,6 +1,6 @@
 import nodePlugin from "eslint-plugin-n"
 import globals from "globals"
-import ignores from "./ignores.js"
+import { ignores } from "./ignores.js"
 
 /** @type {import("eslint").Linter.Config[]} */
 export const node = [
@@ -20,7 +20,7 @@ export const node = [
             }
         },
         plugins: {
-            nodePlugin
+            node: nodePlugin
         },
         rules: {
             "no-restricted-globals": [

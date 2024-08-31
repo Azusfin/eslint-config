@@ -1,5 +1,5 @@
 import globals from "globals"
-import ignores from "./ignores.js"
+import { ignores } from "./ignores.js"
 
 /** @type {import("eslint").Linter.Config[]} */
 export const edge = [

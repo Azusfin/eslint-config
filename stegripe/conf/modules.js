@@ -1,5 +1,5 @@
 import unicorn from "eslint-plugin-unicorn"
-import ignores from "./ignores.js"
+import { ignores } from "./ignores.js"
 
 /** @type {import("eslint").Linter.Config[]} */
 export const modules = [

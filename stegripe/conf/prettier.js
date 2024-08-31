@@ -1,5 +1,5 @@
 import prettierConfig from "eslint-config-prettier"
-import ignores from "./ignores.js"
+import { ignores } from "./ignores.js"
 
 /** @type {import("eslint").Linter.Config[]} */
 export const prettier = [

@@ -1,5 +1,5 @@
 import stylisticPlugin from "@stylistic/eslint-plugin"
-import ignores from "./ignores.js"
+import { ignores } from "./ignores.js"
 
 /** @type {import("eslint").Linter.Config[]} */
 export const stylistic = [
@@ -7,7 +7,7 @@ export const stylistic = [
         name: "stegripe/stylistic",
         ignores: ignores[0].ignores,
         plugins: {
-            stylisticPlugin
+            stylistic: stylisticPlugin
         },
         rules: {
             // Disable legacy rules
