@@ -6,7 +6,7 @@ import globals from "globals"
 import ignores from "./ignores.js"
 
 /** @type {import("eslint").Linter.Config[]} */
-export default [
+export const common = [
     {
         name: "stegripe/common",
         ignores: ignores[0].ignores,

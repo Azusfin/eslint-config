@@ -1,22 +1,12 @@
-import confBrowser from "./conf/browser.js"
-import confCommon from "./conf/common.js"
-import confEdge from "./conf/edge.js"
-import confIgnores from "./conf/ignores.js"
-import confModules from "./conf/modules.js"
-import confNode from "./conf/node.js"
-import confPrettier from "./conf/prettier.js"
-import confStylistic from "./conf/stylistic.js"
-import confTypescript from "./conf/typescript.js"
-
-export const browser = confBrowser
-export const common = confCommon
-export const edge = confEdge
-export const ignores = confIgnores
-export const modules = confModules
-export const node = confNode
-export const prettier = confPrettier
-export const stylistic = confStylistic
-export const typescript = confTypescript
+export { browser } from "./conf/browser.js"
+export { common } from "./conf/common.js"
+export { edge } from "./conf/edge.js"
+export { ignores } from "./conf/ignores.js"
+export { modules } from "./conf/modules.js"
+export { node } from "./conf/node.js"
+export { prettier } from "./conf/prettier.js"
+export { stylistic } from "./conf/stylistic.js"
+export { typescript } from "./conf/typescript.js"
 
 /**
  * @param {import("eslint").Linter.Config[]} config - eslint config

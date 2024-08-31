@@ -1,9 +1,9 @@
-import node from "eslint-plugin-n"
+import nodePlugin from "eslint-plugin-n"
 import globals from "globals"
 import ignores from "./ignores.js"
 
 /** @type {import("eslint").Linter.Config[]} */
-export default [
+export const node = [
     {
         name: "stegripe/node",
         ignores: ignores[0].ignores,
@@ -20,7 +20,7 @@ export default [
             }
         },
         plugins: {
-            node
+            nodePlugin
         },
         rules: {
             "no-restricted-globals": [

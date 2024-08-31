@@ -22,6 +22,22 @@ export const stylistic = Stegripe.extend(Stegripe.stylistic, [
     {
         rule: "stylistic/semi",
         option: "off"
+    },
+    {
+        rule: "stylistic/type-annotation-spacing",
+        option: [
+            "warn",
+            {
+                before: true,
+                after: true,
+                overrides: {
+                    colon: {
+                        before: false,
+                        after: true
+                    }
+                }
+            }
+        ]
     }
 ], true)
 
@@ -57,17 +73,12 @@ export const typescript = Stegripe.extend(Stegripe.typescript, [
                 trailingUnderscore: "forbid"
             },
             {
-                selector: "variable",
-                format: ["camelCase", "UPPER_CASE"]
-            },
-            {
-                selector: "typeLike",
+                selector: "enumMember",
                 format: ["PascalCase"]
             },
             {
-                selector: "property",
-                format: ["camelCase", "UPPER_CASE"],
-                leadingUnderscore: "allowSingleOrDouble"
+                selector: "import",
+                format: ["camelCase", "PascalCase"]
             },
             {
                 selector: "parameter",
@@ -76,8 +87,17 @@ export const typescript = Stegripe.extend(Stegripe.typescript, [
                 leadingUnderscore: "allow"
             },
             {
-                selector: "enumMember",
+                selector: "property",
+                format: ["camelCase", "UPPER_CASE"],
+                leadingUnderscore: "allowSingleOrDouble"
+            },
+            {
+                selector: "typeLike",
                 format: ["PascalCase"]
+            },
+            {
+                selector: "variable",
+                format: ["camelCase", "UPPER_CASE"]
             }
         ]
     },

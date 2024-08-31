@@ -2,7 +2,7 @@ import unicorn from "eslint-plugin-unicorn"
 import ignores from "./ignores.js"
 
 /** @type {import("eslint").Linter.Config[]} */
-export default [
+export const modules = [
     {
         name: "stegripe/modules",
         ignores: ignores[0].ignores,

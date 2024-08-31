@@ -1,17 +1,17 @@
-import stylistic from "@stylistic/eslint-plugin"
+import stylisticPlugin from "@stylistic/eslint-plugin"
 import ignores from "./ignores.js"
 
 /** @type {import("eslint").Linter.Config[]} */
-export default [
+export const stylistic = [
     {
         name: "stegripe/stylistic",
         ignores: ignores[0].ignores,
         plugins: {
-            stylistic
+            stylisticPlugin
         },
         rules: {
             // Disable legacy rules
-            ...stylistic.configs["disable-legacy"].rules,
+            ...stylisticPlugin.configs["disable-legacy"].rules,
 
             // Stylistic rules
             "stylistic/array-bracket-newline": ["warn", "consistent"],
